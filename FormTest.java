@@ -21,12 +21,12 @@ public class FormTest{
        
         WebElement passwordField = driver.findElement(By.id("password"));
         passwordField.sendKeys("Test@123");
-       
-        WebElement creditcardField = driver.findElement(By.id("creditcard"));
-        creditcardField.sendKeys("4111666622227777");
+         //    in site the id is creditCard
+        WebElement creditCardField = driver.findElement(By.id("creditCard"));
+        creditCardField.sendKeys("4111666622227777");
        
         WebElement telephoneField = driver.findElement(By.id("telephone"));
-        telephoneField.sendKeys("(977) 234-2432)");
+        telephoneField.sendKeys("(977) 234-2432");
 
         WebElement successMessage = driver.findElement(By.id("successMessage"));
         if (successMessage.isDisplayed()){
